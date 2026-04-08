@@ -136,6 +136,13 @@ export const KeyboardShortcutsExtension = Extension.create<{
               return false;
             }
 
+            const selectionAtBlockStart =
+              state.selection.from ===
+              blockInfo.blockContent.beforePos + 1;
+            if (!selectionAtBlockStart) {
+              return false;
+            }
+
             const prevBlockInfo = getPrevBlockInfo(
               state.doc,
               blockInfo.bnBlock.beforePos,
@@ -462,12 +469,19 @@ export const KeyboardShortcutsExtension = Extension.create<{
 
             return false;
           }),
-        // If the previous block is a columnList, moves the current block to
-        // the end of the last column in it.
+        // If the next block is a columnList, moves the first block from its
+        // first column to after the current block.
         () =>
           commands.command(({ state, tr, dispatch }) => {
             const blockInfo = getBlockInfoFromSelection(state);
             if (!blockInfo.isBlockContainer) {
+              return false;
+            }
+
+            const selectionAtBlockEnd =
+              state.selection.from ===
+              blockInfo.blockContent.afterPos - 1;
+            if (!selectionAtBlockEnd) {
               return false;
             }
 
