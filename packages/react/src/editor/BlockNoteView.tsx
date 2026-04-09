@@ -10,6 +10,7 @@ import React, {
   ReactNode,
   Ref,
   useCallback,
+  useEffect,
   useMemo,
   useState,
 } from "react";
@@ -147,6 +148,18 @@ function BlockNoteViewComponent<
     [editor],
   );
 
+  useEffect(() => {
+    if (!editor.portalElement) {
+      throw new Error("Portal element not found");
+    }
+    editor.portalElement.className = mergeCSSClasses(
+      "bn-root",
+      editorColorScheme,
+      className || "",
+    );
+    editor.portalElement.setAttribute("data-color-scheme", editorColorScheme);
+  }, [editor, editorColorScheme, className]);
+
   // The BlockNoteContext makes sure the editor and some helper methods
   // are always available to nesteed compoenents
   const blockNoteContext: BlockNoteContextValue<any, any, any> = useMemo(() => {
@@ -226,7 +239,12 @@ const BlockNoteViewContainer = React.forwardRef<
   >
 >(({ className, renderEditor, editorColorScheme, children, ...rest }, ref) => (
   <div
-    className={mergeCSSClasses("bn-container", editorColorScheme, className)}
+    className={mergeCSSClasses(
+      "bn-root",
+      "bn-container",
+      editorColorScheme,
+      className,
+    )}
     data-color-scheme={editorColorScheme}
     {...rest}
     ref={ref}
