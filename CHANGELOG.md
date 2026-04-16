@@ -1,3 +1,19 @@
+## 0.48.1 (2026-04-16)
+
+### 🩹 Fixes
+
+- make CustomChange compatible with prosemirror-changeset 2.4.1 ([#2647](https://github.com/TypeCellOS/BlockNote/pull/2647))
+- **deps:** upgrade nx to 22.6.5 to resolve axios security vulnerability (CVE-2025-62718) ([c1ef3018a](https://github.com/TypeCellOS/BlockNote/commit/c1ef3018a))
+- **deps:** upgrade nx to 22.6.5 to resolve axios security vulnerability ([#2653](https://github.com/TypeCellOS/BlockNote/pull/2653))
+- **docx-exporter:** omit w:lang when no locale provided instead of defaulting to en-US ([#2651](https://github.com/TypeCellOS/BlockNote/pull/2651))
+
+### ❤️ Thank You
+
+- Claude Opus 4.6 (1M context)
+- Nick Perez
+- Nick the Sick
+- Stephan Meijer @StephanMeijer
+
 ## 0.48.0 (2026-04-13)
 
 ### 🚀 Features
