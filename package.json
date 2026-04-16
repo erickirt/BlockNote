@@ -16,7 +16,7 @@
     "serve": "14.2.6",
     "typescript": "^5.9.3",
     "vitest": "^4.1.2",
-    "wait-on": "8.0.3"
+    "wait-on": "9.0.5"
   },
   "pnpm": {
     "ignoredBuiltDependencies": [
