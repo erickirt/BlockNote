@@ -997,11 +997,11 @@
           ],
           "dependencies": {
             "@blocknote/code-block": "latest",
-            "@shikijs/core": "^3.19.0",
-            "@shikijs/engine-javascript": "^3.19.0",
-            "@shikijs/langs-precompiled": "^3.19.0",
-            "@shikijs/themes": "^3.19.0",
-            "@shikijs/types": "^3.19.0"
+            "@shikijs/core": "^4",
+            "@shikijs/engine-javascript": "^4",
+            "@shikijs/langs-precompiled": "^4",
+            "@shikijs/themes": "^4",
+            "@shikijs/types": "^4"
           } as any
         },
         "title": "Custom Code Block Theme & Language",
@@ -1687,6 +1687,30 @@
           "slug": "collaboration"
         },
         "readme": "In this example, we can fork a document and edit it independently of other collaborators. Then, we can choose to merge the changes back into the original document, or discard the changes.\n\n**Try it out:** Open this page in a new browser tab or window to see it in action!\n\n**Relevant Docs:**\n\n- [Editor Setup](/docs/getting-started/editor-setup)"
+      },
+      {
+        "projectSlug": "comments-testing",
+        "fullSlug": "collaboration/comments-testing",
+        "pathFromRoot": "examples/07-collaboration/09-comments-testing",
+        "config": {
+          "playground": true,
+          "docs": false,
+          "author": "matthewlipski",
+          "tags": [
+            "Advanced",
+            "Comments",
+            "Testing"
+          ],
+          "dependencies": {
+            "yjs": "^13.6.27"
+          } as any
+        },
+        "title": "Comments Testing",
+        "group": {
+          "pathFromRoot": "examples/07-collaboration",
+          "slug": "collaboration"
+        },
+        "readme": "A minimal comments example used for end-to-end testing. Uses a local Y.Doc (no collaboration provider) with a single hardcoded editor user."
       }
     ]
   },

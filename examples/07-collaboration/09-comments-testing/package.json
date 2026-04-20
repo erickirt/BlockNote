@@ -1,5 +1,5 @@
 {
-  "name": "@blocknote/example-theming-code-block",
+  "name": "@blocknote/example-collaboration-comments-testing",
   "description": "AUTO-GENERATED FILE, DO NOT EDIT DIRECTLY",
   "type": "module",
   "private": true,
@@ -21,7 +21,7 @@
     "@mantine/utils": "^6.0.22",
     "react": "^19.2.3",
     "react-dom": "^19.2.3",
-    "@blocknote/code-block": "latest"
+    "yjs": "^13.6.27"
   },
   "devDependencies": {
     "@types/react": "^19.2.3",
