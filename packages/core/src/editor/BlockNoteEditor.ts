@@ -562,6 +562,13 @@ export class BlockNoteEditor<
     };
     this.pmSchema.cached.blockNoteEditor = this;
 
+    this._tiptapEditor.on("mount", () => {
+      this.headless = false;
+    });
+    this._tiptapEditor.on("unmount", () => {
+      this.headless = true;
+    });
+
     // Initialize managers
     this._blockManager = new BlockManager(this as any);
 
@@ -758,9 +765,7 @@ export class BlockNoteEditor<
     return this.prosemirrorView?.hasFocus() || false;
   }
 
-  public get headless() {
-    return !this._tiptapEditor.isInitialized;
-  }
+  public headless = true;
 
   /**
    * Focus on the editor
@@ -1296,7 +1301,7 @@ export class BlockNoteEditor<
       editor: BlockNoteEditor<BSchema, ISchema, SSchema>;
     }) => void,
   ) {
-    this._eventManager.onMount(callback);
+    return this._eventManager.onMount(callback);
   }
 
   /**
@@ -1312,7 +1317,7 @@ export class BlockNoteEditor<
       editor: BlockNoteEditor<BSchema, ISchema, SSchema>;
     }) => void,
   ) {
-    this._eventManager.onUnmount(callback);
+    return this._eventManager.onUnmount(callback);
   }
 
   /**
