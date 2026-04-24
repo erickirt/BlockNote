@@ -1,3 +1,28 @@
+## 0.49.0 (2026-04-24)
+
+### 🚀 Features
+
+- simplify links by inlining it to BlockNote ([#2623](https://github.com/TypeCellOS/BlockNote/pull/2623))
+- add Unicode quotation mark input rule for quote blocks ([#2673](https://github.com/TypeCellOS/BlockNote/pull/2673))
+
+### 🩹 Fixes
+
+- Inserting link removes comment & add comment button click buggy ([#2620](https://github.com/TypeCellOS/BlockNote/pull/2620), [#2573](https://github.com/TypeCellOS/BlockNote/issues/2573))
+- `useEditorDOMElement` hook ([#2619](https://github.com/TypeCellOS/BlockNote/pull/2619))
+- text color was not applying to table block ([#2663](https://github.com/TypeCellOS/BlockNote/pull/2663))
+- Drag preview blocking drops when overlapping the editor (BLO-996) ([#2670](https://github.com/TypeCellOS/BlockNote/pull/2670))
+- Drag & drop of blocks without inline content opens formatting toolbar (BLO-1116) ([#2628](https://github.com/TypeCellOS/BlockNote/pull/2628), [#2603](https://github.com/TypeCellOS/BlockNote/issues/2603))
+- save file caption/name on every keystroke instead of on close ([#2575](https://github.com/TypeCellOS/BlockNote/pull/2575))
+- prevent FloatingFocusManager from resetting editor selection ([#2525](https://github.com/TypeCellOS/BlockNote/pull/2525), [#2664](https://github.com/TypeCellOS/BlockNote/pull/2664))
+
+### ❤️ Thank You
+
+- Matthew Lipski @matthewlipski
+- miadnguyen @miadnguyen
+- mianguyen
+- Nick Perez
+- Yousef
+
 ## 0.48.1 (2026-04-16)
 
 ### 🩹 Fixes
