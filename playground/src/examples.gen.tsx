@@ -476,7 +476,7 @@
             "Custom Schemas"
           ],
           "dependencies": {
-            "@mantine/core": "^8.3.11",
+            "@mantine/core": "^9.0.2",
             "react-icons": "^5.5.0"
           } as any
         },
@@ -1285,7 +1285,7 @@
             "Slash Menu"
           ],
           "dependencies": {
-            "@mantine/core": "^8.3.11",
+            "@mantine/core": "^9.0.2",
             "react-icons": "^5.5.0"
           } as any
         },
@@ -1359,7 +1359,7 @@
             "Slash Menu"
           ],
           "dependencies": {
-            "@mantine/core": "^8.3.11",
+            "@mantine/core": "^9.0.2",
             "react-icons": "^5.5.0"
           } as any,
           "pro": true
@@ -1388,7 +1388,7 @@
             "Slash Menu"
           ],
           "dependencies": {
-            "@mantine/core": "^8.3.11",
+            "@mantine/core": "^9.0.2",
             "react-icons": "^5.5.0"
           } as any
         },
@@ -1646,7 +1646,7 @@
           ],
           "dependencies": {
             "@y-sweet/react": "^0.6.3",
-            "@mantine/core": "^8.3.11"
+            "@mantine/core": "^9.0.2"
           } as any
         },
         "title": "Comments & Threads",
@@ -1672,7 +1672,7 @@
           "dependencies": {
             "y-partykit": "^0.0.25",
             "yjs": "^13.6.27",
-            "@mantine/core": "^8.3.11"
+            "@mantine/core": "^9.0.2"
           } as any
         },
         "title": "Threads Sidebar",
@@ -1805,7 +1805,7 @@
           ],
           "dependencies": {
             "@blocknote/xl-ai": "latest",
-            "@mantine/core": "^8.3.11",
+            "@mantine/core": "^9.0.2",
             "ai": "^6.0.5"
           } as any
         },
@@ -1830,7 +1830,7 @@
           ],
           "dependencies": {
             "@blocknote/xl-ai": "latest",
-            "@mantine/core": "^8.3.11",
+            "@mantine/core": "^9.0.2",
             "ai": "^6.0.5"
           } as any
         },
@@ -1855,7 +1855,7 @@
           ],
           "dependencies": {
             "@blocknote/xl-ai": "latest",
-            "@mantine/core": "^8.3.11",
+            "@mantine/core": "^9.0.2",
             "ai": "^6.0.5",
             "react-icons": "^5.5.0"
           } as any
@@ -1881,7 +1881,7 @@
           ],
           "dependencies": {
             "@blocknote/xl-ai": "latest",
-            "@mantine/core": "^8.3.11",
+            "@mantine/core": "^9.0.2",
             "ai": "^6.0.5",
             "y-partykit": "^0.0.25",
             "yjs": "^13.6.27"
@@ -1908,7 +1908,7 @@
           ],
           "dependencies": {
             "@blocknote/xl-ai": "latest",
-            "@mantine/core": "^8.3.11",
+            "@mantine/core": "^9.0.2",
             "ai": "^6.0.5",
             "y-partykit": "^0.0.25",
             "yjs": "^13.6.27"
@@ -1936,7 +1936,7 @@
           "dependencies": {
             "@ai-sdk/groq": "^3.0.2",
             "@blocknote/xl-ai": "latest",
-            "@mantine/core": "^8.3.11",
+            "@mantine/core": "^9.0.2",
             "ai": "^6.0.5"
           } as any
         },
@@ -1961,7 +1961,7 @@
           ],
           "dependencies": {
             "@blocknote/xl-ai": "latest",
-            "@mantine/core": "^8.3.11",
+            "@mantine/core": "^9.0.2",
             "ai": "^6.0.5"
           } as any
         },
